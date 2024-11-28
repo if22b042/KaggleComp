@@ -7,26 +7,21 @@ from sklearn.gaussian_process.kernels import RBF
 from sklearn.metrics import f1_score
 from sklearn.model_selection import ParameterGrid
 
-# Load the dataset
 train_data = pd.read_csv('train_set.csv', index_col=0)
 
 selected_features =['feat_0', 'feat_1', 'feat_3', 'feat_4', 'feat_6', 'feat_7', 'feat_9', 'feat_10', 'feat_11', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_24', 'feat_26', 'feat_27', 'feat_28']
 train_data = train_data.fillna(0)
 train_data = train_data[['target'] + selected_features]
 
-# Separate features and target from training data
 X_train = train_data.drop(columns=['target'])
 y_train = train_data['target']
 
-# Split the training data into two halves
 X_train_1, X_train_2, y_train_1, y_train_2 = train_test_split(X_train, y_train, test_size=0.5, random_state=42)
 
-# Feature scaling (Standardization)
 scaler = StandardScaler()
 X_train_1_scaled = scaler.fit_transform(X_train_1)
 X_train_2_scaled = scaler.transform(X_train_2)
 
-# Define the hyperparameters grid for testing
 param_grid = {
     'length_scale': [ 0.1, 0.2, 0.3, 0.4, 0.5, 0.75, 1.0, 2.0, 5.0]  # Length scale values to test
 }
@@ -61,7 +56,6 @@ def evaluate_gpr(X_train_1, y_train_1, X_train_2, y_train_2, param_grid):
 # Run the evaluation
 results = evaluate_gpr(X_train_1_scaled, y_train_1, X_train_2_scaled, y_train_2, param_grid)
 
-# Find the best hyperparameters based on F1 score
 best_result = max(results, key=lambda x: x[1])
 
 print("\nBest Hyperparameters and F1 Score:")
