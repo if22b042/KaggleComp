@@ -1,0 +1,31 @@
+n_features,features,f1_score
+1,['feat_17'],0.5
+2,"['feat_15', 'feat_17']",0.6771653543307087
+3,"['feat_13', 'feat_15', 'feat_17']",0.65625
+4,"['feat_3', 'feat_13', 'feat_15', 'feat_17']",0.6614173228346457
+5,"['feat_3', 'feat_13', 'feat_15', 'feat_17', 'feat_22']",0.7441860465116279
+6,"['feat_3', 'feat_13', 'feat_15', 'feat_17', 'feat_21', 'feat_22']",0.8
+7,"['feat_3', 'feat_4', 'feat_13', 'feat_15', 'feat_17', 'feat_21', 'feat_22']",0.803030303030303
+8,"['feat_3', 'feat_4', 'feat_13', 'feat_14', 'feat_15', 'feat_17', 'feat_21', 'feat_22']",0.8467153284671532
+9,"['feat_3', 'feat_4', 'feat_13', 'feat_14', 'feat_15', 'feat_17', 'feat_21', 'feat_22', 'feat_29']",0.8405797101449275
+10,"['feat_3', 'feat_4', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_21', 'feat_22', 'feat_29']",0.8148148148148148
+11,"['feat_3', 'feat_4', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_21', 'feat_22', 'feat_26', 'feat_29']",0.8571428571428571
+12,"['feat_3', 'feat_4', 'feat_8', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_21', 'feat_22', 'feat_26', 'feat_29']",0.8296296296296296
+13,"['feat_1', 'feat_3', 'feat_4', 'feat_8', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_21', 'feat_22', 'feat_26', 'feat_29']",0.8507462686567164
+14,"['feat_1', 'feat_3', 'feat_4', 'feat_8', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_21', 'feat_22', 'feat_26', 'feat_27', 'feat_29']",0.8759124087591241
+15,"['feat_1', 'feat_3', 'feat_4', 'feat_8', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.8676470588235294
+16,"['feat_1', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.8571428571428571
+17,"['feat_1', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.835820895522388
+18,"['feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.8421052631578947
+19,"['feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.8721804511278195
+20,"['feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.8787878787878788
+21,"['feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_20', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.8787878787878788
+22,"['feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.8854961832061069
+23,"['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_29']",0.8769230769230769
+24,"['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_28', 'feat_29']",0.9090909090909091
+25,"['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_25', 'feat_26', 'feat_27', 'feat_28', 'feat_29']",0.916030534351145
+26,"['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_23', 'feat_25', 'feat_26', 'feat_27', 'feat_28', 'feat_29']",0.8854961832061069
+27,"['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_6', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_23', 'feat_25', 'feat_26', 'feat_27', 'feat_28', 'feat_29']",0.8872180451127819
+28,"['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_6', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_12', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_23', 'feat_25', 'feat_26', 'feat_27', 'feat_28', 'feat_29']",0.8872180451127819
+29,"['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_6', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_12', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_23', 'feat_24', 'feat_25', 'feat_26', 'feat_27', 'feat_28', 'feat_29']",0.8939393939393939
+30,"['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_6', 'feat_7', 'feat_8', 'feat_9', 'feat_10', 'feat_11', 'feat_12', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_18', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_23', 'feat_24', 'feat_25', 'feat_26', 'feat_27', 'feat_28', 'feat_29']",0.8854961832061069
