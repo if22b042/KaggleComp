@@ -6,8 +6,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 import matplotlib.pyplot as plt
 
+from evaluate import evaluate_svm_rbf, evaluate_gpr
+
 # Load the dataset
-train_data = pd.read_csv('train_set.csv', index_col=0)
+train_data = pd.read_csv('data/train_set.csv', index_col=0)
 train_data = train_data.fillna(0)
 
 # Define the selected features (all features)
@@ -19,8 +21,6 @@ X_train_1, X_train_2, y_train_1, y_train_2 = train_test_split(X, y, test_size=0.
 
 # Feature scaling (Standardization)
 scaler = StandardScaler()
-X_train_1_scaled = scaler.fit_transform(X_train_1)
-X_train_2_scaled = scaler.transform(X_train_2)
 
 # Function to determine feature importance using XGBoost
 def feature_importance(X_train_1, y_train_1):
@@ -45,16 +45,10 @@ def test_feature_importance(X_train_1_scaled, y_train_1, X_train_2_scaled, y_tra
         
         if not selected_features:
             continue
-        
+
+        f1 = evaluate_gpr(X_train_1_scaled, X_train_2_scaled, y_train_1, y_train_2, selected_features)
         # Train an SVM model with RBF kernel using the selected features
-        svm_model = SVC(kernel='rbf', C=10, gamma=0.01, random_state=42)
-        svm_model.fit(X_train_1_scaled[:, importance > threshold], y_train_1)
-        
-        # Predict on the second half of the data
-        y_pred = svm_model.predict(X_train_2_scaled[:, importance > threshold])
-        
-        # Calculate the F1 score
-        f1 = f1_score(y_train_2, y_pred)
+
         
         results.append({
             'threshold': threshold,
@@ -83,4 +77,4 @@ def test_feature_importance(X_train_1_scaled, y_train_1, X_train_2_scaled, y_tra
     print(f"Threshold={best_result['threshold']} => F1 Score: {best_result['f1_score']:.4f}")
 
 # Run the feature importance evaluation
-test_feature_importance(X_train_1_scaled, y_train_1, X_train_2_scaled, y_train_2)
+test_feature_importance(X_train_1, y_train_1, X_train_2, y_train_2)

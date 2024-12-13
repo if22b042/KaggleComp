@@ -7,7 +7,7 @@ from sklearn.metrics import f1_score
 from sklearn.model_selection import ParameterGrid
 
 # Load the dataset
-train_data = pd.read_csv('train_set.csv', index_col=0)
+train_data = pd.read_csv('data/train_set.csv', index_col=0)
 
 selected_features = ['feat_0', 'feat_1', 'feat_2', 'feat_3', 'feat_4', 'feat_5', 'feat_6', 'feat_7', 'feat_10', 'feat_13', 'feat_14', 'feat_15', 'feat_16', 'feat_17', 'feat_19', 'feat_20', 'feat_21', 'feat_22', 'feat_24', 'feat_25', 'feat_26', 'feat_27', 'feat_28', 'feat_29']
 train_data= train_data.fillna(0)

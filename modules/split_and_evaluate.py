@@ -34,5 +34,5 @@ def split_and_evaluate(X, y, features):
     combined_results = pd.concat([results_1, results_2]).sort_values(by="ID")
 
     # Save the results to a CSV file
-    combined_results.to_csv("results_cross_validation.csv", index=False)
+    combined_results.to_csv("../other/results_cross_validation.csv", index=False)
     print("Cross-validation results saved to 'results_cross_validation.csv'")

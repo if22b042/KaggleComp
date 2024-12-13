@@ -14,7 +14,7 @@ from sklearn.gaussian_process.kernels import RBF
 
 from evaluate import evaluate_svm_rbf, evaluate_gpr
 
-train_data = pd.read_csv('train_set.csv', index_col=0)
+train_data = pd.read_csv('data/train_set.csv', index_col=0)
 
 # Separate features and target from training data
 train_data = train_data.fillna(0)

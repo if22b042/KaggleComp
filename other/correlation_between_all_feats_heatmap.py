@@ -31,5 +31,5 @@ def analyze_correlation(train_data):
     return correlation_matrix
 
 
-train_data= pd.read_csv('train_set.csv', index_col=0)
+train_data= pd.read_csv('data/train_set.csv', index_col=0)
 matrix=analyze_correlation(train_data=train_data)

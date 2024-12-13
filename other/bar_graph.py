@@ -3,8 +3,10 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-test_data = pd.read_csv('test_set.csv', index_col=0)
-train_data= pd.read_csv('train_set.csv', index_col=0)
+test_data = pd.read_csv('data/test_set.csv', index_col=0)
+train_data = pd.read_csv('data/train_set.csv', index_col=0)
+
+
 
 correlation_matrix = train_data.corr()
 correlation= correlation_matrix['target']
